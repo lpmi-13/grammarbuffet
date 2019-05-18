@@ -1,0 +1,15 @@
+[Settings]
+
+[[redirects]]
+
+  from = "/touchwords/*"
+  to = "https://awesome-ptolemy-2a0bc0.netlify.com/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+
+  from = "/rhyme-game/*"
+  to = "https://eager-banach-3d94fd.netlify.com/:splat"
+  status = 200
+  force = true
