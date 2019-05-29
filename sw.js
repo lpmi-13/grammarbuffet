@@ -1,4 +1,7 @@
-var cacheName = 'grammarbuffet-v1';
+var cachePrefix = 'grammarbuffet';
+var cacheVersion = 'v7';
+var cacheName = `${cachePrefix}-${cacheVersion}`;
+
 var BASE_FILE_PATH = './';
 var filesToCache = [
   'static/favicon.ico',
@@ -44,7 +47,7 @@ self.addEventListener('activate', function(event) {
   event.waitUntil(
     caches.keys().then(function(keyList) {
       return Promise.all(keyList.map(function(key) {
-        if (key !== cacheName) {
+        if (key.startsWith(`${cachePrefix}`) && key !== cacheName) {
           console.log('sw removing old cache', key);
           return caches.delete(key);
         }
