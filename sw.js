@@ -1,5 +1,5 @@
 var cachePrefix = 'grammarbuffet';
-var cacheVersion = 'v9';
+var cacheVersion = 'v10';
 var cacheName = `${cachePrefix}-${cacheVersion}`;
 
 var BASE_FILE_PATH = './';
