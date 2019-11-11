@@ -22,3 +22,9 @@
   to = "https://eager-banach-3d94fd.netlify.com/:splat"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/stress-game/*"
+  to = "https://hungry-wilson-470e38.netlify.com/:splat"
+  status = 200
+  force = true
