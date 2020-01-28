@@ -1,0 +1,22 @@
+{
+  "name": "grammarbuffet",
+  "version": "1.0.0",
+  "description": "a place for language-based micromaterials",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server",
+    "docker:security": "docker run --rm -e SCAN_URL=\"http://192.168.0.12:8080\" lirantal/is-website-vulnerable:latest",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:security": "npx start-server-and-test start http://localhost:8080 docker:security"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lpmi-13/grammarbuffet.git"
+  },
+  "author": "Adam Leskis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lpmi-13/grammarbuffet/issues"
+  },
+  "homepage": "https://github.com/lpmi-13/grammarbuffet#readme"
+}
