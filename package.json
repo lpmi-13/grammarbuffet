@@ -7,6 +7,7 @@
     "start": "http-server",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
+    "purgecss": "purgecss --css static/css/font-awesome.min.css --content index.html --output purged/",
     "test:cypress": "start-server-and-test start http://localhost:8080 cy:open",
     "test:headless": "start-server-and-test start http://localhost:8080 cy:run",
     "docker:security": "docker run --rm -e SCAN_URL=\"http://192.168.0.12:8080\" lirantal/is-website-vulnerable:latest",
@@ -30,5 +31,9 @@
     "cypress-axe": "^0.8.1",
     "http-server": "^0.12.1",
     "start-server-and-test": "^1.10.11"
+  },
+  "dependencies": {
+    "D": "^1.0.0",
+    "purgecss": "^2.1.0"
   }
 }
