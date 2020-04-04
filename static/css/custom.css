@@ -6,3 +6,15 @@
 .screenshot {
   margin-top: 1.5em;
 }
+
+
+a, h1, h2, section.success, span.skills {
+  color: #333333 !important;
+}
+
+.text-link {
+  background: white;
+  border-radius: 2em;
+  padding: 0.25em;
+  text-decoration-line: underline;
+}
