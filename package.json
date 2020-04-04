@@ -5,6 +5,10 @@
   "main": "index.html",
   "scripts": {
     "start": "npx http-server",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test:cypress": "npx start-server-and-test start http://localhost:8080 cy:open",
+    "test:headless": "npx start-server-and-test start http://localhost:8080 cy:run",
     "docker:security": "docker run --rm -e SCAN_URL=\"http://192.168.0.12:8080\" lirantal/is-website-vulnerable:latest",
     "test": "echo \"Error: no test specified\" && exit 1",
     "test:security": "npx start-server-and-test start http://localhost:8080 docker:security"
@@ -18,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/lpmi-13/grammarbuffet/issues"
   },
-  "homepage": "https://github.com/lpmi-13/grammarbuffet#readme"
+  "homepage": "https://github.com/lpmi-13/grammarbuffet#readme",
+  "devDependencies": {
+    "@testing-library/cypress": "^6.0.0",
+    "axe-core": "^3.5.3",
+    "cypress": "^4.3.0",
+    "cypress-axe": "^0.8.1",
+    "start-server-and-test": "^1.10.11"
+  }
 }
