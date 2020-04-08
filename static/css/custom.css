@@ -17,4 +17,5 @@ a, h1, h2, section.success, span.skills {
   border-radius: 2em;
   padding: 0.25em;
   text-decoration-line: underline;
+  white-space: nowrap;
 }
