@@ -2,277 +2,229 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A landing page for Micromaterials">
     <meta name="author" content="Adam Leskis">
+    <meta name="theme-color" content="#18bc9c">
 
-<!-- open graph meta tags -->
+    <!-- Open Graph -->
     <meta property="og:description" content="A landing page for Micromaterials">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
     <meta property="og:title" content="Grammar Buffet">
-    <meta property="og:site_name" content="Grammer Buffet">
+    <meta property="og:site_name" content="Grammar Buffet">
     <meta property="og:determiner" content="the">
     <link rel="canonical" href="https://grammarbuffet.org">
-    <meta property="og:url" content="https://grammerbuffet.org">
+    <meta property="og:url" content="https://grammarbuffet.org">
     <meta property="og:image" content="https://grammarbuffet.org/static/favicon.ico">
     <meta property="og:image:type" content="image/x-icon">
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
 
-<!-- twitter card meta tags -->
+    <!-- Twitter card -->
     <meta name="twitter:title" content="Grammar Buffet">
     <meta name="twitter:description" content="A landing page for Micromaterials">
     <meta name="twitter:image" content="https://grammarbuffet.org/static/favicon.ico">
     <meta name="twitter:card" content="summary">
 
-
     <title>Grammar Buffet</title>
 
-    <!-- Bootstrap Core CSS ...but after purgecss -->
-    <link href="purged/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="purged/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="static/css/custom.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
     <link rel="shortcut icon" href="static/favicon.ico">
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register('./sw.js', {scope: './'}).then(function(registration) {
-            console.log('ServiceWorker registration successful with scope: ', registration.scope);
-          }, function(err) {
-            console.log('ServiceWorker registration failed: ', err);
-          });
-        });
-      }
-    </script>
+    <link rel="icon" href="static/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="static/css/styles.css">
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top">
 
+    <a class="skip-link" href="#main">Skip to content</a>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="site-nav" aria-label="Primary">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a aria-label="go to the top of the page" class="navbar-brand" href="#page-top">Grammar Buffet</a>
-            </div>
+            <a class="brand" href="#page-top" aria-label="Go to the top of the page">Grammar Buffet</a>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a aria-label="go to applications" href="#applications">Applications</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a aria-label="go to the about section" href="#about">About</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"
+                aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#applications">Applications</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
         </div>
-        <!-- /.container-fluid -->
     </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    <div class="intro-text">
-                        <h1 class="name">Grammar Buffet</h1>
-                        
-                        <span class="skills">a place for micromaterials</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    <main id="main">
 
-    <!-- Portfolio Grid Section -->
-    <section id="applications">
-        <div class="container" role="main">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>click an application to check it out!</h2>
-                </div>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="name">Grammar Buffet</h1>
+                <span class="tagline">a place for micromaterials</span>
             </div>
-            <div class="row portfolio-item">
-                <div class="col-sm-4 screenshot">
-                    <a aria-label="the anwriting application" href="https://anwriting.herokuapp.com" class="portfolio-link">
-                      <img src="static/images/anwriting-screenshot-small.png" class="img-responsive" alt="Anwriting" >
-                    </a>
-                </div>
-                <div class="col-sm-8">
-                    <div>
-                        <h3>AnWriting</h3>
-                    </div>
-                    <p><strong>Focus:</strong> Revising articles</p>
-                    <p><strong>Source:</strong> Reddit fiction/BBC Business/arXiv academic abstracts</p>
-                    <p><strong>Time:</strong> 3-5 minutes</p>
-                    <p><strong>Description:</strong> This application is aimed at working on revising writing for articles. It uses authentic texts from fiction, news, and academic registers. Choose a type of writing, then select from the choices (or search for academic abstracts) and add in the missing articles.</p>
-                </div>
-            </div>
-            <div class="row portfolio-item">
-                <div class="col-sm-4 screenshot">
-                    <a aria-label="the touchwords application" href="/touchwords/" class="portfolio-link">
-                      <img src="static/images/touchwords-screenshot-small.png" class="img-responsive" alt="TouchWords">
-                    </a>
-                </div>
-                <div class="col-sm-8">
-                    <div>
-                        <h3>TouchWords</h3>
-                    </div>
-                    <p><strong>Focus:</strong> Identifying and revising irregular simple past verbs</p>
-                    <p><strong>Source:</strong> Common irregular verbs</p>
-                    <p><strong>Time:</strong> 8 minutes</p>
-                    <p><strong>Description:</strong> Find the incorrect simple past forms. Touch them to collect 10 points. In the bonus round, type in the simple past form to get 50 points for each correct answer.</p>
-                </div>
-            </div>
-            <div class="row portfolio-item">
-                <div class="col-sm-4 screenshot">
-                    <a aria-label="the rhyme matching application" href="/rhyme-game/" class="portfolio-link">
-                      <img src="static/images/rhyme-game-screenshot-small.png" class="img-responsive" alt="rhyme game logo">
-                    </a>
-                </div>
-                <div class="col-sm-8">
-                    <div>
-                        <h3>Rhymez</h3>
-                    </div>
-                    <p><strong>Focus:</strong> Identifying words with rhymes</p>
-                    <p><strong>Source:</strong> New General Service List</p>
-                    <p><strong>Time:</strong> 3 minutes</p>
-                    <p><strong>Description:</strong> Choose a word to rhyme with, then tap all the words that rhyme.</p>
-                </div>
-            </div>
-            <div class="row portfolio-item">
-                <div class="col-sm-4 screenshot">
-                    <a aria-label="the stress matching application" href="/stress-game/" class="portfolio-link">
-                      <img src="static/images/stress-out-screenshot-scaled.png" class="img-responsive" alt="stress out screenshot">
-                    </a>
-                </div>
-                <div class="col-sm-8">
-                    <div>
-                        <h3>Stress Out</h3>
-                    </div>
-                    <p><strong>Focus:</strong> Identifying words with similar main stress</p>
-                    <p><strong>Source:</strong> Academic Word List (2000)</p>
-                    <p><strong>Time:</strong> 3 minutes</p>
-                    <p><strong>Description:</strong> Choose a stress pattern to match, then tap all the words that have the same main stress.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container" role="contentinfo">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About Grammar Buffet</h2>
+        <!-- Applications -->
+        <section id="applications">
+            <div class="container">
+                <h2 class="section-title">Click an application to check it out!</h2>
+
+                <div class="apps">
+
+                    <article class="app-card">
+                        <a class="app-card__media" href="https://anwriting.netlify.app"
+                            aria-label="Open the AnWriting application">
+                            <picture>
+                                <source type="image/webp" srcset="static/images/anwriting-screenshot.webp">
+                                <img src="static/images/anwriting-screenshot.png" width="1176" height="689"
+                                    alt="Screenshot of the AnWriting application" loading="eager" decoding="async">
+                            </picture>
+                        </a>
+                        <div class="app-card__body">
+                            <h3><a href="https://anwriting.netlify.app">AnWriting</a></h3>
+                            <p class="app-card__meta"><strong>Focus:</strong> Revising articles</p>
+                            <p class="app-card__meta"><strong>Source:</strong> Reddit fiction/BBC Business/arXiv academic
+                                abstracts</p>
+                            <p class="app-card__meta"><strong>Time:</strong> 3-5 minutes</p>
+                            <p class="app-card__desc">This application is aimed at working on revising writing for
+                                articles. It uses authentic texts from fiction, news, and academic registers. Choose a
+                                type of writing, then select from the choices (or search for academic abstracts) and add
+                                in the missing articles.</p>
+                        </div>
+                    </article>
+
+                    <article class="app-card">
+                        <a class="app-card__media" href="https://touchwords.netlify.app"
+                            aria-label="Open the TouchWords application">
+                            <picture>
+                                <source type="image/webp" srcset="static/images/touchwords-screenshot.webp">
+                                <img src="static/images/touchwords-screenshot.png" width="1089" height="626"
+                                    alt="Screenshot of the TouchWords application" loading="lazy" decoding="async">
+                            </picture>
+                        </a>
+                        <div class="app-card__body">
+                            <h3><a href="https://touchwords.netlify.app">TouchWords</a></h3>
+                            <p class="app-card__meta"><strong>Focus:</strong> Identifying and revising irregular simple
+                                past verbs</p>
+                            <p class="app-card__meta"><strong>Source:</strong> Common irregular verbs</p>
+                            <p class="app-card__meta"><strong>Time:</strong> 8 minutes</p>
+                            <p class="app-card__desc">Find the incorrect simple past forms. Touch them to collect 10
+                                points. In the bonus round, type in the simple past form to get 50 points for each
+                                correct answer.</p>
+                        </div>
+                    </article>
+
+                    <article class="app-card">
+                        <a class="app-card__media" href="https://rhyme-match-game.netlify.app"
+                            aria-label="Open the Rhymez application">
+                            <picture>
+                                <source type="image/webp" srcset="static/images/rhyme-game-screenshot.webp">
+                                <img src="static/images/rhyme-game-screenshot-small.png" width="438" height="403"
+                                    alt="Screenshot of the Rhymez application" loading="lazy" decoding="async">
+                            </picture>
+                        </a>
+                        <div class="app-card__body">
+                            <h3><a href="https://rhyme-match-game.netlify.app">Rhymez</a></h3>
+                            <p class="app-card__meta"><strong>Focus:</strong> Identifying words with rhymes</p>
+                            <p class="app-card__meta"><strong>Source:</strong> New General Service List</p>
+                            <p class="app-card__meta"><strong>Time:</strong> 3 minutes</p>
+                            <p class="app-card__desc">Choose a word to rhyme with, then tap all the words that rhyme.</p>
+                        </div>
+                    </article>
+
+                    <article class="app-card">
+                        <a class="app-card__media" href="https://stress-match.netlify.app/"
+                            aria-label="Open the Stress Out application">
+                            <img src="static/images/stress-out-screenshot-scaled.png" width="430" height="417"
+                                alt="Screenshot of the Stress Out application" loading="lazy" decoding="async">
+                        </a>
+                        <div class="app-card__body">
+                            <h3><a href="https://stress-match.netlify.app/">Stress Out</a></h3>
+                            <p class="app-card__meta"><strong>Focus:</strong> Identifying words with similar main stress
+                            </p>
+                            <p class="app-card__meta"><strong>Source:</strong> Academic Word List (2000)</p>
+                            <p class="app-card__meta"><strong>Time:</strong> 3 minutes</p>
+                            <p class="app-card__desc">Choose a stress pattern to match, then tap all the words that have
+                                the same main stress.</p>
+                        </div>
+                    </article>
+
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>This is a place to aggregate all the applications that I've created
-                        in the model of <a href='https://micromaterialsblog.wordpress.com'
-                        aria-label="micromaterials blog" class="text-link">Micromaterials</a>, intended as very
-                        targeted exercises focusing on discrete learning objectives. The
-                        two main points are that they are entirely digital, and also based
-                        on authentic language resources available freely on the internet.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>Collaboration is both welcomed and encouraged. In fact, if you want
-                        to just take any of these and use it yourself. It's all hosted publicly
-                        on <a href='https://github.com/lpmi-13' aria-label="my github profile"
-                        class="text-link">my github profile</a>. Pull requests welcome!</p>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Grammar Buffet</h2>
+                <div class="about__grid">
+                    <p>This is a place to aggregate all the applications that I've created in the model of
+                        <a href="https://micromaterialsblog.wordpress.com" aria-label="Micromaterials blog">Micromaterials</a>,
+                        intended as very targeted exercises focusing on discrete learning objectives. The two main points
+                        are that they are entirely digital, and also based on authentic language resources available
+                        freely on the internet.</p>
+                    <p>Collaboration is both welcomed and encouraged. In fact, if you want to just take any of these and
+                        use it yourself, it's all hosted publicly on
+                        <a href="https://github.com/lpmi-13" aria-label="My GitHub profile">my GitHub profile</a>. Pull
+                        requests welcome!</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </main>
 
     <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above" role="contentinfo">
+    <footer class="site-footer">
+        <div class="site-footer__top">
             <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
+                <div class="footer-grid">
+                    <div class="footer-col">
                         <h3>Location</h3>
-                        <p><br>Dundee, UK</p>
+                        <p>Dundee, UK</p>
                     </div>
-                    <div class="footer-col col-md-4">
+                    <div class="footer-col">
                         <h3>Around the Web</h3>
-                          <a href="https://micromaterialsblog.wordpress.com" aria-label="micromaterials blog" class="btn-social btn-outline"><i class="fa fa-fw fa-wordpress"></i></a>
+                        <a class="social-btn" href="https://micromaterialsblog.wordpress.com"
+                            aria-label="Micromaterials blog on WordPress">
+                            <svg viewBox="0 0 512 512" role="img" aria-hidden="true" focusable="false">
+                                <path d="M256 8C119.3 8 8 119.2 8 256c0 136.7 111.3 248 248 248s248-111.3 248-248C504 119.2 392.7 8 256 8zM33 256c0-32.3 6.9-63 19.3-90.7l106.4 291.4C84.3 420.5 33 344.2 33 256zm223 223c-21.9 0-43-3.2-63-9.1l66.9-194.4 68.5 187.8c.5 1.1 1 2.1 1.6 3.1-23.1 8.1-48 12.6-74 12.6zm30.7-327.5c13.4-.7 25.5-2.1 25.5-2.1 12-1.4 10.6-19.1-1.4-18.4 0 0-36.1 2.8-59.4 2.8-21.9 0-58.7-2.8-58.7-2.8-12-.7-13.4 17.7-1.4 18.4 0 0 11.4 1.4 23.4 2.1l34.7 95.2L200.6 393l-81.2-241.5c13.4-.7 25.5-2.1 25.5-2.1 12-1.4 10.6-19.1-1.4-18.4 0 0-36.1 2.8-59.4 2.8-4.2 0-9.1-.1-14.4-.3C109.6 73 178.1 33 256 33c58 0 110.9 22.2 150.6 58.5-1-.1-1.9-.2-2.9-.2-21.9 0-37.4 19.1-37.4 39.6 0 18.4 10.6 33.9 21.9 52.3 8.5 14.8 18.4 33.9 18.4 61.5 0 19.1-7.3 41.2-17 72.1l-22.2 74.3-80.7-239.6zm81.4 297.2l68.1-196.9c12.7-31.8 17-57.2 17-79.9 0-8.2-.5-15.8-1.5-22.9 17.4 31.8 27.3 68.2 27.3 107 0 82.3-44.6 154.1-110.9 192.6z" />
+                            </svg>
+                        </a>
                     </div>
-                    <div class="footer-col col-md-4">
+                    <div class="footer-col">
                         <h3>Get in touch</h3>
-                        <p>Feel free to contact me at adam.leskis@gmail.com. I'd be very happy to collaborate on any projects you might be interested in, and as mentioned, pull requests welcome!</p>
+                        <p>Feel free to contact me at
+                            <a href="mailto:adam.leskis@gmail.com">adam.leskis@gmail.com</a>. I'd be very happy to
+                            collaborate on any projects you might be interested in, and as mentioned, pull requests
+                            welcome!</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer-below" role="contentinfo">
+        <div class="site-footer__bottom">
             <div class="container">
-                <div class="row">
-                    <div id="copyright" class="col-lg-12">
-                    </div>
-                </div>
+                <p>Copyright &copy; Adam Leskis <span id="copyright-year">2026</span></p>
             </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visible-sm" role="navigation">
-        <a aria-label="go to top of the page" class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
+    <!-- Scroll to top -->
+    <button class="scroll-top" type="button" aria-label="Scroll back to top">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 8.29 5.29 15l1.42 1.41L12 11.12l5.29 5.29L18.71 15z" />
+        </svg>
+    </button>
 
-    <!-- jQuery -->
-    <script src="static/js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="static/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="static/js/classie.js"></script>
-    <script src="static/js/cbpAnimatedHeader.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="static/js/freelancer.js"></script>
-
+    <script src="static/js/main.js"></script>
 </body>
-    <!-- Custom CSS -->
-    <link href="static/css/freelancer.css" rel="stylesheet">
-  <script>
-    var currentYear = new Date().getFullYear();
-    var copyright = document.createTextNode('Copyright ' + String.fromCharCode(0x00A9)  + ' Adam Leskis ' + currentYear);
-    document.getElementById('copyright').appendChild(copyright);
-  </script>
 
 </html>

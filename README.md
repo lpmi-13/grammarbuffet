@@ -1,16 +1,32 @@
 # grammarbuffet
-a landing page for micromaterials
 
-## local development
+A landing page for a collection of language-learning micromaterials.
 
-(webpack seemed too heavy slash I couldn't get it working)
+It is a single static page — plain, semantic HTML, modern CSS, and a small
+amount of vanilla JavaScript. There is no framework and no build step.
 
-`npx http-server`
+## Local development
 
-the page will be available at `localhost:8080`
+Serve the folder with any static file server:
 
-## security testing
+```
+npm install
+npm start
+```
 
-- first, build the docker container locally using the information at https://github.com/lirantal/is-website-vulnerable
+The page will be available at `http://localhost:8080`.
 
-- then just run `npm run test:security`, which will use the container you just built
+## Accessibility tests
+
+Automated accessibility checks run with Cypress and axe-core:
+
+```
+npm test              # headless run
+npm run test:cypress  # interactive Cypress runner
+```
+
+## Security testing
+
+- first, build the docker container locally using the information at
+  https://github.com/lirantal/is-website-vulnerable
+- then run `npm run test:security`, which will use the container you just built
